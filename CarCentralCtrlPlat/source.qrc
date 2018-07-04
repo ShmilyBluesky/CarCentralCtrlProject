@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>source/images/main_array1.jpg</file>
+        <file>source/images/main_array2.jpg</file>
+        <file>source/images/main_back1.png</file>
+        <file>source/images/main_back2.png</file>
+        <file>source/images/car_door.png</file>
+        <file>source/images/car_window.png</file>
+        <file>source/images/carwindow/left_head.png</file>
+        <file>source/images/carwindow/left_tail.png</file>
+        <file>source/images/carwindow/right_head.png</file>
+        <file>source/images/carwindow/right_tail.png</file>
+        <file>source/images/cardoor_demo.png</file>
+        <file>source/images/carwindow_demo.png</file>
+        <file>source/images/car_airCtrl.png</file>
+        <file>source/images/car_backupCamera.png</file>
+        <file>source/images/car_lamb.png</file>
+        <file>source/images/car_music.png</file>
+        <file>source/images/car_navigate.png</file>
+        <file>source/images/car_phone.png</file>
+        <file>source/images/car_radio.png</file>
+        <file>source/images/car_vedio.png</file>
+        <file>source/images/car_volume.png</file>
+        <file>source/images/carairctrl_demo.png</file>
+        <file>source/images/carbackupcamera_demo.png</file>
+        <file>source/images/carlamb_demo.png</file>
+        <file>source/images/carmusic_demo.png</file>
+        <file>source/images/carnavigate_demo1.png</file>
+        <file>source/images/carnavigate_demo2.png</file>
+        <file>source/images/carphone_demo1.png</file>
+        <file>source/images/carphone_demo2.png</file>
+        <file>source/images/carradio_demo.png</file>
+        <file>source/images/carvedio_demo1.png</file>
+        <file>source/images/carvedio_demo2.png</file>
+        <file>source/images/carvedio_demo3.png</file>
+        <file>source/images/carvolume_demo.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AnimationItem.qml</file>
+        <file>MainDefault.qml</file>
+        <file>MainDefaultForm.ui.qml</file>
+        <file>MainCtrl.qml</file>
+        <file>MainCtrlForm.ui.qml</file>
+        <file>PageMainCtrl.qml</file>
+        <file>PageMainDefault.qml</file>
+        <file>MainModule.qml</file>
+        <file>MainModuleForm.ui.qml</file>
+        <file>PageMainModule.qml</file>
+        <file>CarWindow.qml</file>
+        <file>CarWindowForm.ui.qml</file>
+        <file>CarDoor.qml</file>
+        <file>CarDoorForm.ui.qml</file>
+        <file>CarAirCtrl.qml</file>
+        <file>CarAirCtrlForm.ui.qml</file>
+        <file>CarNavigate.qml</file>
+        <file>CarNavigateForm.ui.qml</file>
+        <file>CarPhone.qml</file>
+        <file>CarPhoneForm.ui.qml</file>
+        <file>CarRadio.qml</file>
+        <file>CarRadioForm.ui.qml</file>
+        <file>CarMusic.qml</file>
+        <file>CarMusicForm.ui.qml</file>
+        <file>CarVedio.qml</file>
+        <file>CarVedioForm.ui.qml</file>
+        <file>CarLamb.qml</file>
+        <file>CarLambForm.ui.qml</file>
+        <file>CarVolume.qml</file>
+        <file>CarVolumeForm.ui.qml</file>
+        <file>CarBackupCamera.qml</file>
+        <file>CarBackupCameraForm.ui.qml</file>
+        <file>CarPhoneIncome.qml</file>
+        <file>CarPhoneIncomeForm.ui.qml</file>
+        <file>CarNavigateIng.qml</file>
+        <file>CarNavigateIngForm.ui.qml</file>
+        <file>PageCarNavigateIng.qml</file>
+        <file>PageCarBackupCamera.qml</file>
+        <file>PageCarPhoneIncome.qml</file>
+        <file>CarVedioIng.qml</file>
+        <file>CarVedioIngForm.ui.qml</file>
+        <file>PageCarVedioIng.qml</file>
+    </qresource>
+</RCC>
