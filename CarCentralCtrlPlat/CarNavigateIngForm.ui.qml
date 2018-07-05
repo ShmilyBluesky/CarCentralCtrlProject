@@ -8,6 +8,7 @@ Item {
 
     Image {
         id: image1
+        clip: false
         anchors.right: parent.right
         anchors.rightMargin: 0
         anchors.left: parent.left
@@ -20,6 +21,7 @@ Item {
 
         MouseArea {
             id: mouseArea4exitNavigateIng
+            clip: true
             anchors.right: parent.right
             anchors.rightMargin: 150
             anchors.left: parent.left

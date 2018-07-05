@@ -18,14 +18,8 @@ Item {
 
     Image {
         id: image1
-        anchors.right: parent.right
-        anchors.rightMargin: 0
-        anchors.left: parent.left
-        anchors.leftMargin: 0
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 0
-        anchors.top: parent.top
-        anchors.topMargin: 0
+        anchors.fill: parent
+        clip: false
         source: "source/images/main_back2.png"
 
         Image {
@@ -42,6 +36,7 @@ Item {
 
             MouseArea {
                 id: mouseArea4gotoMainDefault
+                clip: true
                 anchors.right: parent.right
                 anchors.rightMargin: 0
                 anchors.left: parent.left
@@ -53,186 +48,197 @@ Item {
             }
         }
 
-        Image {
-            id: image4carDoor
-            x: 126
-            y: 31
-            width: 67
-            height: 63
-            z: 1
-            source: "source/images/car_door.png"
+        Grid {
+            id: grid
+            scale: 1
+            rotation: 0
+            antialiasing: true
+            transformOrigin: Item.Center
+            layoutDirection: Qt.LeftToRight
+            flow: Grid.LeftToRight
+            spacing: 15
+            rows: 5
+            columns: 3
+            anchors.right: parent.right
+            anchors.rightMargin: 0
+            anchors.left: parent.left
+            anchors.leftMargin: 0
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 40
+            anchors.top: parent.top
+            anchors.topMargin: 0
 
-            MouseArea {
-                id: mouseArea4Door
-                x: 0
-                y: 0
+            Image {
+                id: image4carWindow
                 width: 67
                 height: 63
                 z: 2
+                source: "source/images/car_window.png"
+
+                MouseArea {
+                    id: mouseArea4Window
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
             }
-        }
 
-        Image {
-            id: image4carWindow
-            x: 37
-            y: 31
-            width: 67
-            height: 63
-            z: 2
-            source: "source/images/car_window.png"
+            Image {
+                id: image4carDoor
+                width: 67
+                height: 63
+                z: 1
+                source: "source/images/car_door.png"
 
-            MouseArea {
-                id: mouseArea4Window
-                x: 0
-                y: 0
+                MouseArea {
+                    id: mouseArea4Door
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+            }
+
+            Image {
+                id: image4carAirCtrl
+                width: 67
+                height: 63
+                z: 1
+                MouseArea {
+                    id: mouseArea4airCtrl
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_airCtrl.png"
+            }
+
+            Image {
+                id: image4carNavigate
+                width: 67
+                height: 63
+                z: 1
+                MouseArea {
+                    id: mouseArea4navigate
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_navigate.png"
+            }
+
+            Image {
+                id: image4carPhone
                 width: 67
                 height: 63
                 z: 2
+                MouseArea {
+                    id: mouseArea4phone
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_phone.png"
             }
-        }
 
-        Image {
-            id: image4carAirCtrl
-            x: 214
-            y: 31
-            width: 67
-            height: 63
-            z: 1
-            MouseArea {
-                id: mouseArea4airCtrl
-                x: 0
-                y: 0
+            Image {
+                id: image4carRadio
+                width: 67
+                height: 63
+                z: 1
+                MouseArea {
+                    id: mouseArea4radio
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_radio.png"
+            }
+
+            Image {
+                id: image4carMusic
+                width: 67
+                height: 63
+                z: 1
+                MouseArea {
+                    id: mouseArea4music
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_music.png"
+            }
+
+            Image {
+                id: imag4carVedio
+                width: 67
+                height: 63
+                z: 1
+                MouseArea {
+                    id: mouseArea4vedio
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_vedio.png"
+            }
+
+            Image {
+                id: image4carLamb
                 width: 67
                 height: 63
                 z: 2
+                MouseArea {
+                    id: mouseArea4lamb
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_lamb.png"
             }
-            source: "source/images/car_airCtrl.png"
-        }
 
-        Image {
-            id: image4carNavigate
-            x: 304
-            y: 31
-            width: 67
-            height: 63
-            z: 1
-            MouseArea {
-                id: mouseArea4navigate
-                x: 0
-                y: 0
+            Image {
+                id: image4carVolume
                 width: 67
                 height: 63
-                z: 2
+                z: 1
+                MouseArea {
+                    id: mouseArea4volume
+                    x: 0
+                    y: 0
+                    width: 67
+                    height: 63
+                    clip: true
+                    z: 2
+                }
+                source: "source/images/car_volume.png"
             }
-            source: "source/images/car_navigate.png"
-        }
-
-        Image {
-            id: image4carRadio
-            x: 126
-            y: 112
-            width: 67
-            height: 63
-            z: 1
-            MouseArea {
-                id: mouseArea4radio
-                x: 0
-                y: 0
-                width: 67
-                height: 63
-                z: 2
-            }
-            source: "source/images/car_radio.png"
-        }
-
-        Image {
-            id: image4carPhone
-            x: 37
-            y: 112
-            width: 67
-            height: 63
-            z: 2
-            MouseArea {
-                id: mouseArea4phone
-                x: 0
-                y: 0
-                width: 67
-                height: 63
-                z: 2
-            }
-            source: "source/images/car_phone.png"
-        }
-
-        Image {
-            id: image4carMusic
-            x: 214
-            y: 112
-            width: 67
-            height: 63
-            z: 1
-            MouseArea {
-                id: mouseArea4music
-                x: 0
-                y: 0
-                width: 67
-                height: 63
-                z: 2
-            }
-            source: "source/images/car_music.png"
-        }
-
-        Image {
-            id: imag4carVedio
-            x: 304
-            y: 112
-            width: 67
-            height: 63
-            z: 1
-            MouseArea {
-                id: mouseArea4vedio
-                x: 0
-                y: 0
-                width: 67
-                height: 63
-                z: 2
-            }
-            source: "source/images/car_vedio.png"
-        }
-
-        Image {
-            id: image4carVolume
-            x: 126
-            y: 196
-            width: 67
-            height: 63
-            z: 1
-            MouseArea {
-                id: mouseArea4volume
-                x: 0
-                y: 0
-                width: 67
-                height: 63
-                z: 2
-            }
-            source: "source/images/car_volume.png"
-        }
-
-        Image {
-            id: image4carLamb
-            x: 37
-            y: 196
-            width: 67
-            height: 63
-            z: 2
-            MouseArea {
-                id: mouseArea4lamb
-                x: 0
-                y: 0
-                width: 67
-                height: 63
-                z: 2
-            }
-            source: "source/images/car_lamb.png"
         }
     }
 }

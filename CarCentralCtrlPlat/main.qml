@@ -16,6 +16,18 @@ Window {
     property int index4CarBackupCamera: 4
     property int index4CarPhoneIncome: 5
     property int index4CarVedioIng: 6
+
+    property int moduleID4Window:   0x0001
+    property int moduleID4Door:     0x0002
+    property int moduleID4AirCtrl:  0x0004
+    property int moduleID4Navigate: 0x0008
+    property int moduleID4Phone:    0x0010
+    property int moduleID4Radio:    0x0020
+    property int moduleID4Music:    0x0040
+    property int moduleID4Vedio:    0x0080
+    property int moduleID4Lamb:     0x0100
+    property int moduleID4Volume:   0x0200
+
     property int pageIndex: 1
 
     PageMainCtrl {

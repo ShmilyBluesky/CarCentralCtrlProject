@@ -8,6 +8,7 @@ Item {
 
     Image {
         id: image1
+        clip: false
         anchors.right: parent.right
         anchors.rightMargin: 0
         anchors.left: parent.left
@@ -24,6 +25,7 @@ Item {
             y: 300
             width: 100
             height: 100
+            clip: true
         }
     }
 }

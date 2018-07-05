@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.0
 
 Item {
     id: item1
@@ -8,6 +8,8 @@ Item {
 
     Image {
         id: image1
+        visible: true
+        clip: true
         anchors.right: parent.right
         anchors.rightMargin: 0
         anchors.left: parent.left
@@ -20,6 +22,7 @@ Item {
 
         MouseArea {
             id: mouseArea4carNavigateIng
+            clip: true
             anchors.right: parent.right
             anchors.rightMargin: 0
             anchors.left: parent.right

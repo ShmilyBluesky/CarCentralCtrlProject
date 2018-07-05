@@ -6,42 +6,42 @@ MainCtrlForm {
     }
     mouseArea4Window.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarWindow"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Window)
     }
     mouseArea4Door.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarDoor"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Door)
     }
     mouseArea4airCtrl.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarAirCtrl"
+        mainModuleWndPage.showModule(mainWindow.moduleID4AirCtrl)
     }
     mouseArea4navigate.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarNavigate"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Navigate)
     }
     mouseArea4phone.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarPhone"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Phone)
     }
     mouseArea4radio.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarRadio"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Radio)
     }
     mouseArea4music.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarMusic"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Music)
     }
     mouseArea4vedio.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarVedio"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Vedio)
     }
     mouseArea4lamb.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarLamb"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Lamb)
     }
     mouseArea4volume.onClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.state = "CarVolume"
+        mainModuleWndPage.showModule(mainWindow.moduleID4Volume)
     }
 }
