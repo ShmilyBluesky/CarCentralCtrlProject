@@ -22,12 +22,12 @@ Item {
             id: mouseArea4carNavigateIng
             anchors.right: parent.right
             anchors.rightMargin: 0
-            anchors.left: parent.left
-            anchors.leftMargin: 300
+            anchors.left: parent.right
+            anchors.leftMargin: -100
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 0
-            anchors.top: parent.top
-            anchors.topMargin: 345
+            anchors.top: parent.bottom
+            anchors.topMargin: -55
         }
     }
 }
