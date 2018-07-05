@@ -56,31 +56,28 @@ Item {
             transformOrigin: Item.Center
             layoutDirection: Qt.LeftToRight
             flow: Grid.LeftToRight
-            spacing: 15
-            rows: 5
+            spacing: 10
+            rows: 4
             columns: 3
             anchors.right: parent.right
-            anchors.rightMargin: 0
+            anchors.rightMargin: 20
             anchors.left: parent.left
-            anchors.leftMargin: 0
+            anchors.leftMargin: 20
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 40
+            anchors.bottomMargin: 60
             anchors.top: parent.top
-            anchors.topMargin: 0
+            anchors.topMargin: 20
 
             Image {
                 id: image4carWindow
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 2
                 source: "source/images/car_window.png"
 
                 MouseArea {
                     id: mouseArea4Window
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -88,17 +85,14 @@ Item {
 
             Image {
                 id: image4carDoor
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 source: "source/images/car_door.png"
 
                 MouseArea {
                     id: mouseArea4Door
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -106,15 +100,12 @@ Item {
 
             Image {
                 id: image4carAirCtrl
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 MouseArea {
                     id: mouseArea4airCtrl
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -123,15 +114,12 @@ Item {
 
             Image {
                 id: image4carNavigate
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 MouseArea {
                     id: mouseArea4navigate
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -140,15 +128,12 @@ Item {
 
             Image {
                 id: image4carPhone
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 2
                 MouseArea {
                     id: mouseArea4phone
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -157,15 +142,12 @@ Item {
 
             Image {
                 id: image4carRadio
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 MouseArea {
                     id: mouseArea4radio
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -174,15 +156,12 @@ Item {
 
             Image {
                 id: image4carMusic
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 MouseArea {
                     id: mouseArea4music
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -191,15 +170,12 @@ Item {
 
             Image {
                 id: imag4carVedio
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 MouseArea {
                     id: mouseArea4vedio
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -208,15 +184,12 @@ Item {
 
             Image {
                 id: image4carLamb
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 2
                 MouseArea {
                     id: mouseArea4lamb
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
@@ -225,15 +198,12 @@ Item {
 
             Image {
                 id: image4carVolume
-                width: 67
-                height: 63
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
                 z: 1
                 MouseArea {
                     id: mouseArea4volume
-                    x: 0
-                    y: 0
-                    width: 67
-                    height: 63
+                    anchors.fill: parent
                     clip: true
                     z: 2
                 }
