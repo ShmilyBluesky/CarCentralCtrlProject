@@ -8,13 +8,11 @@ Item {
     property alias gotoMainCtrl: gotoMainCtrl
     property alias carVolume: carVolume
     property alias carLamb: carLamb
-    property alias carVedio: carVedio
     property alias carMusic: carMusic
     property alias carRadio: carRadio
     property alias carPhone: carPhone
     property alias carNavigate: carNavigate
     property alias carAirCtrl: carAirCtrl
-    property alias carDoor: carDoor
     property alias carWindow: carWindow
     property alias item2: item2
     property alias image1: image1
@@ -30,7 +28,7 @@ Item {
         anchors.bottomMargin: 0
         anchors.top: parent.top
         anchors.topMargin: 0
-        source: "source/images/main_back1.png"
+        source: ""
 
         CustomButton {
             id: gotoMainDefault
@@ -78,11 +76,6 @@ Item {
                 anchors.fill: parent
             }
 
-            CarDoor {
-                id: carDoor
-                anchors.fill: parent
-            }
-
             CarAirCtrl {
                 id: carAirCtrl
                 anchors.fill: parent
@@ -105,11 +98,6 @@ Item {
 
             CarMusic {
                 id: carMusic
-                anchors.fill: parent
-            }
-
-            CarVedio {
-                id: carVedio
                 anchors.fill: parent
             }
 

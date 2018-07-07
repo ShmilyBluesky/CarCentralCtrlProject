@@ -5,22 +5,20 @@ Item {
     width: 400
     height: 400
     property alias gotoMainDefault: gotoMainDefault
-    property alias mouseArea4navigate: mouseArea4navigate
-    property alias mouseArea4phone: mouseArea4phone
-    property alias mouseArea4radio: mouseArea4radio
-    property alias mouseArea4music: mouseArea4music
-    property alias mouseArea4vedio: mouseArea4vedio
-    property alias mouseArea4lamb: mouseArea4lamb
-    property alias mouseArea4volume: mouseArea4volume
-    property alias mouseArea4airCtrl: mouseArea4airCtrl
-    property alias mouseArea4Door: mouseArea4Door
-    property alias mouseArea4Window: mouseArea4Window
+    property alias image4carWindow: image4carWindow
+    property alias image4carAirCtrl: image4carAirCtrl
+    property alias image4carNavigate: image4carNavigate
+    property alias image4carPhone: image4carPhone
+    property alias image4carRadio: image4carRadio
+    property alias image4carMusic: image4carMusic
+    property alias image4carLamb: image4carLamb
+    property alias image4carVolume: image4carVolume
 
     Image {
         id: image1
         anchors.fill: parent
         clip: false
-        source: "source/images/main_back2.png"
+        source: "source/images/mainback4Ctrl.png"
 
         CustomButton {
             id: gotoMainDefault
@@ -57,146 +55,76 @@ Item {
             anchors.top: parent.top
             anchors.topMargin: 20
 
-            Image {
+            CustomButton {
                 id: image4carWindow
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 2
-                source: "source/images/car_window.png"
-
-                MouseArea {
-                    id: mouseArea4Window
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
+                imgBtnDef: "source/images/car_window_def.png"
+                imgBtnHover: "source/images/car_window_hover.png"
+                imgBtnPress: "source/images/car_window_press.png"
             }
 
-            Image {
-                id: image4carDoor
-                width: (parent.width - 20) / 3
-                height: (parent.height - 30) / 4
-                z: 1
-                source: "source/images/car_door.png"
-
-                MouseArea {
-                    id: mouseArea4Door
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-            }
-
-            Image {
+            CustomButton {
                 id: image4carAirCtrl
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 1
-                MouseArea {
-                    id: mouseArea4airCtrl
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_airCtrl.png"
+                imgBtnDef: "source/images/car_airCtrl_def.png"
+                imgBtnHover: "source/images/car_airCtrl_hover.png"
+                imgBtnPress: "source/images/car_airCtrl_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: image4carNavigate
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 1
-                MouseArea {
-                    id: mouseArea4navigate
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_navigate.png"
+                imgBtnDef: "source/images/car_navigate_def.png"
+                imgBtnHover: "source/images/car_navigate_hover.png"
+                imgBtnPress: "source/images/car_navigate_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: image4carPhone
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 2
-                MouseArea {
-                    id: mouseArea4phone
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_phone.png"
+                imgBtnDef: "source/images/car_phone_def.png"
+                imgBtnHover: "source/images/car_phone_hover.png"
+                imgBtnPress: "source/images/car_phone_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: image4carRadio
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 1
-                MouseArea {
-                    id: mouseArea4radio
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_radio.png"
+                imgBtnDef: "source/images/car_radio_def.png"
+                imgBtnHover: "source/images/car_radio_hover.png"
+                imgBtnPress: "source/images/car_radio_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: image4carMusic
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 1
-                MouseArea {
-                    id: mouseArea4music
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_music.png"
+                imgBtnDef: "source/images/car_music_def.png"
+                imgBtnHover: "source/images/car_music_hover.png"
+                imgBtnPress: "source/images/car_music.png"
             }
 
-            Image {
-                id: imag4carVedio
-                width: (parent.width - 20) / 3
-                height: (parent.height - 30) / 4
-                z: 1
-                MouseArea {
-                    id: mouseArea4vedio
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_vedio.png"
-            }
-
-            Image {
+            CustomButton {
                 id: image4carLamb
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 2
-                MouseArea {
-                    id: mouseArea4lamb
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_lamb.png"
+                imgBtnDef: "source/images/car_lamb_def.png"
+                imgBtnHover: "source/images/car_lamb_hover.png"
+                imgBtnPress: "source/images/car_lamb_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: image4carVolume
                 width: (parent.width - 20) / 3
                 height: (parent.height - 30) / 4
-                z: 1
-                MouseArea {
-                    id: mouseArea4volume
-                    anchors.fill: parent
-                    clip: true
-                    z: 2
-                }
-                source: "source/images/car_volume.png"
+                imgBtnDef: "source/images/car_volume_def.png"
+                imgBtnHover: "source/images/car_volume_hover.png"
+                imgBtnPress: "source/images/car_volume_press.png"
             }
         }
     }

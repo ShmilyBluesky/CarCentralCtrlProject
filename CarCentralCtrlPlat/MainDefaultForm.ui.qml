@@ -18,7 +18,7 @@ Item {
         anchors.bottomMargin: 0
         anchors.top: parent.top
         anchors.topMargin: 0
-        source: "source/images/main_back1.png"
+        source: "source/images/mainback4Default.png"
 
         CustomButton {
             id: gotoMainCtrl

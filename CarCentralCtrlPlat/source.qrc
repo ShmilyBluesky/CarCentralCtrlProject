@@ -1,39 +1,11 @@
 <RCC>
     <qresource prefix="/">
-        <file>source/images/main_array1.jpg</file>
-        <file>source/images/main_array2.jpg</file>
-        <file>source/images/main_back1.png</file>
-        <file>source/images/main_back2.png</file>
-        <file>source/images/car_door.png</file>
-        <file>source/images/car_window.png</file>
+        <file>source/images/mainback4Default.png</file>
+        <file>source/images/mainback4Ctrl.png</file>
         <file>source/images/carwindow/left_head.png</file>
         <file>source/images/carwindow/left_tail.png</file>
         <file>source/images/carwindow/right_head.png</file>
         <file>source/images/carwindow/right_tail.png</file>
-        <file>source/images/cardoor_demo.png</file>
-        <file>source/images/carwindow_demo.png</file>
-        <file>source/images/car_airCtrl.png</file>
-        <file>source/images/car_backupCamera.png</file>
-        <file>source/images/car_lamb.png</file>
-        <file>source/images/car_music.png</file>
-        <file>source/images/car_navigate.png</file>
-        <file>source/images/car_phone.png</file>
-        <file>source/images/car_radio.png</file>
-        <file>source/images/car_vedio.png</file>
-        <file>source/images/car_volume.png</file>
-        <file>source/images/carairctrl_demo.png</file>
-        <file>source/images/carbackupcamera_demo.png</file>
-        <file>source/images/carlamb_demo.png</file>
-        <file>source/images/carmusic_demo.png</file>
-        <file>source/images/carnavigate_demo1.png</file>
-        <file>source/images/carnavigate_demo2.png</file>
-        <file>source/images/carphone_demo1.png</file>
-        <file>source/images/carphone_demo2.png</file>
-        <file>source/images/carradio_demo.png</file>
-        <file>source/images/carvedio_demo1.png</file>
-        <file>source/images/carvedio_demo2.png</file>
-        <file>source/images/carvedio_demo3.png</file>
-        <file>source/images/carvolume_demo.png</file>
         <file>source/images/Phone/imgBtnAnswered_def.png</file>
         <file>source/images/Phone/imgBtnAnswered_hover.png</file>
         <file>source/images/Phone/imgBtnAnswered_press.png</file>
@@ -70,5 +42,37 @@
         <file>source/images/mainModule/mainDefault_def.png</file>
         <file>source/images/mainModule/mainDefault_hover.png</file>
         <file>source/images/mainModule/mainDefault_press.png</file>
+        <file>source/images/car_airCtrl_def.png</file>
+        <file>source/images/car_airCtrl_hover.png</file>
+        <file>source/images/car_airCtrl_press.png</file>
+        <file>source/images/car_lamb_def.png</file>
+        <file>source/images/car_lamb_hover.png</file>
+        <file>source/images/car_lamb_press.png</file>
+        <file>source/images/car_music_def.png</file>
+        <file>source/images/car_music_hover.png</file>
+        <file>source/images/car_music_press.png</file>
+        <file>source/images/car_navigate_def.png</file>
+        <file>source/images/car_navigate_hover.png</file>
+        <file>source/images/car_navigate_press.png</file>
+        <file>source/images/car_phone_def.png</file>
+        <file>source/images/car_phone_hover.png</file>
+        <file>source/images/car_phone_press.png</file>
+        <file>source/images/car_radio_def.png</file>
+        <file>source/images/car_radio_hover.png</file>
+        <file>source/images/car_radio_press.png</file>
+        <file>source/images/car_volume_def.png</file>
+        <file>source/images/car_volume_hover.png</file>
+        <file>source/images/car_volume_press.png</file>
+        <file>source/images/car_window_def.png</file>
+        <file>source/images/car_window_hover.png</file>
+        <file>source/images/car_window_press.png</file>
+        <file>source/images/back4airCtrl.png</file>
+        <file>source/images/back4lamb.png</file>
+        <file>source/images/back4music.png</file>
+        <file>source/images/back4navigate.png</file>
+        <file>source/images/back4phone.png</file>
+        <file>source/images/back4radio.png</file>
+        <file>source/images/back4volume.png</file>
+        <file>source/images/back4window.png</file>
     </qresource>
 </RCC>

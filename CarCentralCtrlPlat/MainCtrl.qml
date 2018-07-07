@@ -4,43 +4,35 @@ MainCtrlForm {
     gotoMainDefault.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainDefaultDesktop
     }
-    mouseArea4Window.onClicked: {
+    image4carWindow.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Window)
     }
-    mouseArea4Door.onClicked: {
-        mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.showModule(mainWindow.moduleID4Door)
-    }
-    mouseArea4airCtrl.onClicked: {
+    image4carAirCtrl.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4AirCtrl)
     }
-    mouseArea4navigate.onClicked: {
+    image4carNavigate.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Navigate)
     }
-    mouseArea4phone.onClicked: {
+    image4carPhone.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Phone)
     }
-    mouseArea4radio.onClicked: {
+    image4carRadio.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Radio)
     }
-    mouseArea4music.onClicked: {
+    image4carMusic.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Music)
     }
-    mouseArea4vedio.onClicked: {
-        mainWindow.pageIndex = mainWindow.index4MainModule
-        mainModuleWndPage.showModule(mainWindow.moduleID4Vedio)
-    }
-    mouseArea4lamb.onClicked: {
+    image4carLamb.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Lamb)
     }
-    mouseArea4volume.onClicked: {
+    image4carVolume.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainModule
         mainModuleWndPage.showModule(mainWindow.moduleID4Volume)
     }
