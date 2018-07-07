@@ -36,15 +36,9 @@ Item {
 
             MouseArea {
                 id: mouseArea4gotoMainDefault
-                clip: true
-                anchors.right: parent.right
-                anchors.rightMargin: 0
-                anchors.left: parent.left
-                anchors.leftMargin: 0
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 0
-                anchors.top: parent.top
                 anchors.topMargin: 0
+                anchors.fill: parent
+                clip: true
             }
         }
 
