@@ -43,5 +43,12 @@
         <file>CarVedioIng.qml</file>
         <file>CarVedioIngForm.ui.qml</file>
         <file>PageCarVedioIng.qml</file>
+        <file>source/images/music/calibration1.png</file>
+        <file>source/images/music/calibration2.png</file>
+        <file>source/images/music/calibration3.png</file>
+        <file>source/images/music/calibration7.png</file>
+        <file>source/images/music/calibration8.png</file>
+        <file>source/images/music/calibration9.bmp</file>
+        <file>source/images/music/car_airCtrl.png</file>
     </qresource>
 </RCC>
