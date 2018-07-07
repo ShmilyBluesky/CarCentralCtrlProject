@@ -1,12 +1,9 @@
-import QtQuick 2.4
+import QtQuick 2.0
 
 Item {
     id: item1
     width: 600
     height: 400
-    property alias text: text
-    property alias imgDelete: imgDelete
-
 
     Row {
         id: rowAll
@@ -19,70 +16,61 @@ Item {
 
         Column {
             id: columnPhoneRecord
-            width: (parent.width-40)/3
+            width: (parent.width - 40) / 3
             height: parent.height
             spacing: 10
 
-            Image {
+            CustomButton {
                 id: imgBtnNoAnswer
                 width: parent.width
-                height: (parent.height-30)/4
-                source: "source/images/Phone/imgBtnNoAnswer.png"
-
-                MouseArea {
-                    id: mouseAreaNoAnswer
-                    anchors.fill: parent
-                }
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/imgBtnNoAnswer_def.png"
+                imgBtnHover: "source/images/Phone/imgBtnNoAnswer_hover.png"
+                imgBtnPress: "source/images/Phone/imgBtnNoAnswer_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: imgBtnAnswered
                 width: parent.width
-                height: (parent.height-30)/4
-                source: "source/images/Phone/imgBtnCalled.png"
-                MouseArea {
-                    id: mouseAreaAnswered
-                    anchors.fill: parent
-                }
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/imgBtnCalled_def.png"
+                imgBtnHover: "source/images/Phone/imgBtnCalled_hover.png"
+                imgBtnPress: "source/images/Phone/imgBtnCalled_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: imgBtnCalled
                 width: parent.width
-                height: (parent.height-30)/4
-                source: "source/images/Phone/imgBtnNoAnswer.png"
-                MouseArea {
-                    id: mouseAreaCalled
-                    anchors.fill: parent
-                }
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/imgBtnNoAnswer_def.png"
+                imgBtnHover: "source/images/Phone/imgBtnNoAnswer_hover.png"
+                imgBtnPress: "source/images/Phone/imgBtnNoAnswer_press.png"
             }
 
-            Image {
+            CustomButton {
                 id: imgBtnPhoneBook
                 width: parent.width
-                height: (parent.height-30)/4
-                source: "source/images/Phone/imgBtnPhoneBook.png"
-                MouseArea {
-                    id: mouseAreaPhoneBook
-                    anchors.fill: parent
-                }
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/imgBtnPhoneBook_def.png"
+                imgBtnHover: "source/images/Phone/imgBtnPhoneBook_hover.png"
+                imgBtnPress: "source/images/Phone/imgBtnPhoneBook_press.png"
             }
         }
 
         Column {
             id: columnShowDialDelete
-            width: (parent.width-40)/3
+            width: (parent.width - 40) / 3
             height: parent.height
             spacing: 10
 
             Image {
                 id: imgInputDialNumber
                 width: parent.width
-                height: (parent.height-10)/2
+                height: (parent.height - 10) / 2
                 source: "source/images/Phone/imgInput.png"
 
                 TextEdit {
-                    id: text
+                    id: inputText
                     text: qsTr("Text Edit")
                     anchors.right: parent.right
                     anchors.rightMargin: 0
@@ -100,177 +88,252 @@ Item {
             Row {
                 id: rowDialDelete
                 width: parent.width
-                height: (parent.height-10)/2
+                height: (parent.height - 10) / 2
                 spacing: 10
 
-                Image {
+                CustomButton {
                     id: imgDial
-                    width: (parent.width - 10)/2
+                    width: (parent.width - 10) / 2
                     height: parent.height
-                    source: "source/images/Phone/imgDial.png"
-
-                    MouseArea {
-                        id: mouseAreaDial
-                        anchors.fill: parent
-                    }
+                    imgBtnDef: "source/images/Phone/imgDial_def.png"
+                    imgBtnHover: "source/images/Phone/imgDial_hover.png"
+                    imgBtnPress: "source/images/Phone/imgDial_press.png"
                 }
 
-                Image {
+                CustomButton {
                     id: imgDelete
-                    width: (parent.width - 10)/2
+                    width: (parent.width - 10) / 2
                     height: parent.height
-                    source: "source/images/Phone/imgDelete.png"
-                    MouseArea {
-                        id: mouseAreaDelete
-                        anchors.fill: parent
-                    }
+                    imgBtnDef: "source/images/Phone/imgDelete_def.png"
+                    imgBtnHover: "source/images/Phone/imgDelete_hover.png"
+                    imgBtnPress: "source/images/Phone/imgDelete_press.png"
                 }
             }
-
         }
 
         Grid {
             id: gridKey
-            width: (parent.width-40)/3
+            width: (parent.width - 40) / 3
             height: parent.height
             spacing: 10
             rows: 4
             columns: 3
 
-            Image {
+            CustomButton {
                 id: imgKey1
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
 
-                MouseArea {
-                    id: mouseAreaKey1
+                Text {
+                    id: text1
+                    text: qsTr("1")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey2
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey2
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text2
+                    text: qsTr("2")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-
-            Image {
+            CustomButton {
                 id: imgKey3
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey3
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text3
+                    text: qsTr("3")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey4
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey4
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text4
+                    text: qsTr("4")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey5
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey5
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text5
+                    text: qsTr("5")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey6
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey6
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text6
+                    text: qsTr("6")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey7
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey7
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text7
+                    text: qsTr("7")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey8
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey8
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text8
+                    text: qsTr("8")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey9
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey9
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text9
+                    text: qsTr("9")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKeyXing
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKeyXing
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: textXing
+                    text: qsTr("*")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKey0
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKey0
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: text0
+                    text: qsTr("0")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
 
-            Image {
+            CustomButton {
                 id: imgKeyJing
-                width: (parent.width - 20)/3
-                height: (parent.height-30)/4
-                source: "source/images/Phone/key.png"
-                MouseArea {
-                    id: mouseAreaKeyJing
+                width: (parent.width - 20) / 3
+                height: (parent.height - 30) / 4
+                imgBtnDef: "source/images/Phone/key_def.png"
+                imgBtnHover: "source/images/Phone/key_hover.png"
+                imgBtnPress: "source/images/Phone/key_press.png"
+
+                Text {
+                    id: textJing
+                    text: qsTr("#")
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
                     anchors.fill: parent
+                    font.pixelSize: 36
                 }
             }
-
         }
     }
 }

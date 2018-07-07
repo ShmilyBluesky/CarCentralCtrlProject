@@ -34,14 +34,41 @@
         <file>source/images/carvedio_demo2.png</file>
         <file>source/images/carvedio_demo3.png</file>
         <file>source/images/carvolume_demo.png</file>
-        <file>source/images/mainDefault/mainModule.png</file>
-        <file>source/images/Phone/imgBtnAnswered.png</file>
-        <file>source/images/Phone/imgBtnCalled.png</file>
-        <file>source/images/Phone/imgBtnNoAnswer.png</file>
-        <file>source/images/Phone/imgBtnPhoneBook.png</file>
-        <file>source/images/Phone/imgDelete.png</file>
-        <file>source/images/Phone/imgDial.png</file>
-        <file>source/images/Phone/key.png</file>
-        <file>source/images/Phone/imgInput.png</file>
+        <file>source/images/Phone/imgBtnAnswered_def.png</file>
+        <file>source/images/Phone/imgBtnAnswered_hover.png</file>
+        <file>source/images/Phone/imgBtnAnswered_press.png</file>
+        <file>source/images/Phone/imgBtnCalled_def.png</file>
+        <file>source/images/Phone/imgBtnCalled_hover.png</file>
+        <file>source/images/Phone/imgBtnCalled_press.png</file>
+        <file>source/images/Phone/imgBtnNoAnswer_def.png</file>
+        <file>source/images/Phone/imgBtnNoAnswer_hover.png</file>
+        <file>source/images/Phone/imgBtnNoAnswer_press.png</file>
+        <file>source/images/Phone/imgBtnPhoneBook_def.png</file>
+        <file>source/images/Phone/imgBtnPhoneBook_hover.png</file>
+        <file>source/images/Phone/imgBtnPhoneBook_press.png</file>
+        <file>source/images/Phone/imgDelete_def.png</file>
+        <file>source/images/Phone/imgDelete_hover.png</file>
+        <file>source/images/Phone/imgDelete_press.png</file>
+        <file>source/images/Phone/imgDial_def.png</file>
+        <file>source/images/Phone/imgDial_hover.png</file>
+        <file>source/images/Phone/imgDial_press.png</file>
+        <file>source/images/Phone/imgInput_def.png</file>
+        <file>source/images/Phone/imgInput_hover.png</file>
+        <file>source/images/Phone/imgInput_press.png</file>
+        <file>source/images/Phone/key_def.png</file>
+        <file>source/images/Phone/key_hover.png</file>
+        <file>source/images/Phone/key_press.png</file>
+        <file>source/images/mainCtrl/mainDefault_def.png</file>
+        <file>source/images/mainCtrl/mainDefault_hover.png</file>
+        <file>source/images/mainCtrl/mainDefault_press.png</file>
+        <file>source/images/mainDefault/mainModule_def.png</file>
+        <file>source/images/mainDefault/mainModule_hover.png</file>
+        <file>source/images/mainDefault/mainModule_press.png</file>
+        <file>source/images/mainModule/mainCtrl_def.png</file>
+        <file>source/images/mainModule/mainCtrl_hover.png</file>
+        <file>source/images/mainModule/mainCtrl_press.png</file>
+        <file>source/images/mainModule/mainDefault_def.png</file>
+        <file>source/images/mainModule/mainDefault_hover.png</file>
+        <file>source/images/mainModule/mainDefault_press.png</file>
     </qresource>
 </RCC>

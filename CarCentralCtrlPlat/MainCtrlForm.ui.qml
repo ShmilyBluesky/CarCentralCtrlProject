@@ -4,7 +4,7 @@ Item {
     id: item1
     width: 400
     height: 400
-    property alias mouseArea4gotoMainDefault: mouseArea4gotoMainDefault
+    property alias gotoMainDefault: gotoMainDefault
     property alias mouseArea4navigate: mouseArea4navigate
     property alias mouseArea4phone: mouseArea4phone
     property alias mouseArea4radio: mouseArea4radio
@@ -22,24 +22,19 @@ Item {
         clip: false
         source: "source/images/main_back2.png"
 
-        Image {
-            id: image2
+        CustomButton {
+            id: gotoMainDefault
             anchors.right: parent.right
-            anchors.rightMargin: 0
+            anchors.rightMargin: 160
             anchors.left: parent.left
-            anchors.leftMargin: 0
+            anchors.leftMargin: 160
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 0
             anchors.top: parent.bottom
             anchors.topMargin: -40
-            source: "source/images/main_array2.jpg"
-
-            MouseArea {
-                id: mouseArea4gotoMainDefault
-                anchors.topMargin: 0
-                anchors.fill: parent
-                clip: true
-            }
+            imgBtnDef: "source/images/mainCtrl/mainDefault_def.png"
+            imgBtnHover: "source/images/mainCtrl/mainDefault_hover.png"
+            imgBtnPress: "source/images/mainCtrl/mainDefault_press.png"
         }
 
         Grid {

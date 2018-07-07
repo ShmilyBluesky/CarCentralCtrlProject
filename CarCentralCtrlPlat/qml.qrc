@@ -50,5 +50,7 @@
         <file>source/images/music/calibration8.png</file>
         <file>source/images/music/calibration9.bmp</file>
         <file>source/images/music/car_airCtrl.png</file>
+        <file>CustomButton.qml</file>
+        <file>CustomButtonForm.ui.qml</file>
     </qresource>
 </RCC>

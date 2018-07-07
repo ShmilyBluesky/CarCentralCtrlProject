@@ -1,7 +1,7 @@
 import QtQuick 2.4
 
 MainCtrlForm {
-    mouseArea4gotoMainDefault.onClicked: {
+    gotoMainDefault.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainDefaultDesktop
     }
     mouseArea4Window.onClicked: {
