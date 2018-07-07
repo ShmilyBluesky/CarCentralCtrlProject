@@ -9,6 +9,7 @@ Window {
     title: qsTr("CarCentralCtrlPlat")
     flags: Qt.FramelessWindowHint
 
+    // 界面索引
     property int index4MainCtrl: 0
     property int index4MainDefaultDesktop: 1
     property int index4MainModule: 2
@@ -17,6 +18,7 @@ Window {
     property int index4CarPhoneIncome: 5
     property int index4CarVedioIng: 6
 
+    // 功能界面索引
     property int moduleID4Window:   0x0001
     property int moduleID4Door:     0x0002
     property int moduleID4AirCtrl:  0x0004
