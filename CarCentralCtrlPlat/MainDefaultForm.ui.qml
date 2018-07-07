@@ -22,15 +22,15 @@ Item {
 
         Image {
             id: image2
-            anchors.right: parent.right
-            anchors.rightMargin: 0
+            anchors.right: parent.left
+            anchors.rightMargin: -90
             anchors.left: parent.left
-            anchors.leftMargin: 0
-            anchors.bottom: parent.top
-            anchors.bottomMargin: -40
-            anchors.top: parent.top
-            anchors.topMargin: 0
-            source: "source/images/main_array1.jpg"
+            anchors.leftMargin: 10
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 10
+            anchors.top: parent.bottom
+            anchors.topMargin: -90
+            source: "source/images/mainDefault/mainModule.png"
 
             MouseArea {
                 id: mouseArea4gotoMainCtrl

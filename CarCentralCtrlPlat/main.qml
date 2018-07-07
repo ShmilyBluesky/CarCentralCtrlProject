@@ -4,8 +4,8 @@ import QtQuick.Window 2.2
 Window {
     id: mainWindow
     visible: true
-    width: 800
-    height: 600
+    width: 875
+    height: 492
     title: qsTr("CarCentralCtrlPlat")
     flags: Qt.FramelessWindowHint
 

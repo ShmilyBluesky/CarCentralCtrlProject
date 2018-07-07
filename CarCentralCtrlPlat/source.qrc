@@ -34,5 +34,14 @@
         <file>source/images/carvedio_demo2.png</file>
         <file>source/images/carvedio_demo3.png</file>
         <file>source/images/carvolume_demo.png</file>
+        <file>source/images/mainDefault/mainModule.png</file>
+        <file>source/images/Phone/imgBtnAnswered.png</file>
+        <file>source/images/Phone/imgBtnCalled.png</file>
+        <file>source/images/Phone/imgBtnNoAnswer.png</file>
+        <file>source/images/Phone/imgBtnPhoneBook.png</file>
+        <file>source/images/Phone/imgDelete.png</file>
+        <file>source/images/Phone/imgDial.png</file>
+        <file>source/images/Phone/key.png</file>
+        <file>source/images/Phone/imgInput.png</file>
     </qresource>
 </RCC>
