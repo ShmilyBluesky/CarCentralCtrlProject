@@ -47,10 +47,8 @@ Item {
 
         CustomButton {
             id: gotoMainCtrl
-            anchors.right: parent.right
-            anchors.rightMargin: 160
-            anchors.left: parent.left
-            anchors.leftMargin: 160
+            width: 100
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.top
             anchors.bottomMargin: -40
             anchors.top: parent.top

@@ -106,7 +106,7 @@ Item {
                 height: (parent.height - (parent.gridSpacing * 1)) / 2
                 imgBtnDef: "source/images/car_music_def.png"
                 imgBtnHover: "source/images/car_music_hover.png"
-                imgBtnPress: "source/images/car_music.png"
+                imgBtnPress: "source/images/car_music_press.png"
             }
 
             CustomButton {

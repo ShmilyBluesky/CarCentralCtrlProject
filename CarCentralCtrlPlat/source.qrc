@@ -2,10 +2,6 @@
     <qresource prefix="/">
         <file>source/images/mainback4Default.png</file>
         <file>source/images/mainback4Ctrl.png</file>
-        <file>source/images/carwindow/left_head.png</file>
-        <file>source/images/carwindow/left_tail.png</file>
-        <file>source/images/carwindow/right_head.png</file>
-        <file>source/images/carwindow/right_tail.png</file>
         <file>source/images/Phone/imgBtnAnswered_def.png</file>
         <file>source/images/Phone/imgBtnAnswered_hover.png</file>
         <file>source/images/Phone/imgBtnAnswered_press.png</file>
@@ -74,5 +70,87 @@
         <file>source/images/back4radio.png</file>
         <file>source/images/back4volume.png</file>
         <file>source/images/back4window.png</file>
+        <file>source/images/airCtrl/off_def.png</file>
+        <file>source/images/airCtrl/off_hover.png</file>
+        <file>source/images/airCtrl/off_press.png</file>
+        <file>source/images/airCtrl/on_def.png</file>
+        <file>source/images/airCtrl/on_hover.png</file>
+        <file>source/images/airCtrl/on_press.png</file>
+        <file>source/images/carwindow/halfopen_def.png</file>
+        <file>source/images/carwindow/halfopen_hover.png</file>
+        <file>source/images/carwindow/halfopen_press.png</file>
+        <file>source/images/carwindow/off_def.png</file>
+        <file>source/images/carwindow/off_hover.png</file>
+        <file>source/images/carwindow/off_press.png</file>
+        <file>source/images/carwindow/on_def.png</file>
+        <file>source/images/carwindow/on_hover.png</file>
+        <file>source/images/carwindow/on_press.png</file>
+        <file>source/images/carwindow/all_off_def.png</file>
+        <file>source/images/carwindow/all_off_hover.png</file>
+        <file>source/images/carwindow/all_off_press.png</file>
+        <file>source/images/carwindow/all_on_def.png</file>
+        <file>source/images/carwindow/all_on_hover.png</file>
+        <file>source/images/carwindow/all_on_press.png</file>
+        <file>source/images/carwindow/carwindow.png</file>
+        <file>source/images/navigate/btnAdd_def.png</file>
+        <file>source/images/navigate/btnAdd_hover.png</file>
+        <file>source/images/navigate/btnAdd_press.png</file>
+        <file>source/images/navigate/btnDec_def.png</file>
+        <file>source/images/navigate/btnDec_hover.png</file>
+        <file>source/images/navigate/btnDec_press.png</file>
+        <file>source/images/navigate/btnSearch_def.png</file>
+        <file>source/images/navigate/btnSearch_hover.png</file>
+        <file>source/images/navigate/btnSearch_press.png</file>
+        <file>source/images/navigate/imgCircleGreen.png</file>
+        <file>source/images/navigate/imgCircleRed.png</file>
+        <file>source/images/lamb/back4guest.png</file>
+        <file>source/images/lamb/back4read.png</file>
+        <file>source/images/lamb/btn4turnoff_def.png</file>
+        <file>source/images/lamb/btn4turnoff_hover.png</file>
+        <file>source/images/lamb/btn4turnoff_press.png</file>
+        <file>source/images/lamb/btn4turnon_def.png</file>
+        <file>source/images/lamb/btn4turnon_hover.png</file>
+        <file>source/images/lamb/btn4turnon_press.png</file>
+        <file>source/images/volume/class/btnClasic_def.png</file>
+        <file>source/images/volume/class/btnClasic_hover.png</file>
+        <file>source/images/volume/class/btnClasic_press.png</file>
+        <file>source/images/volume/class/btnClasicCheck_def.png</file>
+        <file>source/images/volume/class/btnClasicCheck_hover.png</file>
+        <file>source/images/volume/class/btnClasicCheck_press.png</file>
+        <file>source/images/volume/jazz/btnJazz_def.png</file>
+        <file>source/images/volume/jazz/btnJazz_hover.png</file>
+        <file>source/images/volume/jazz/btnJazz_press.png</file>
+        <file>source/images/volume/jazz/btnJazzCheck_def.png</file>
+        <file>source/images/volume/jazz/btnJazzCheck_hover.png</file>
+        <file>source/images/volume/jazz/btnJazzCheck_press.png</file>
+        <file>source/images/volume/pop/btnPop_def.png</file>
+        <file>source/images/volume/pop/btnPop_hover.png</file>
+        <file>source/images/volume/pop/btnPop_press.png</file>
+        <file>source/images/volume/pop/btnPopCheck_def.png</file>
+        <file>source/images/volume/pop/btnPopCheck_hover.png</file>
+        <file>source/images/volume/pop/btnPopCheck_press.png</file>
+        <file>source/images/volume/rock/btnRock_def.png</file>
+        <file>source/images/volume/rock/btnRock_hover.png</file>
+        <file>source/images/volume/rock/btnRock_press.png</file>
+        <file>source/images/volume/rock/btnRockCheck_def.png</file>
+        <file>source/images/volume/rock/btnRockCheck_hover.png</file>
+        <file>source/images/volume/rock/btnRockCheck_press.png</file>
+        <file>source/images/volume/back4volume.png</file>
+        <file>source/images/redio/back4redio.png</file>
+        <file>source/images/redio/btnHeader_def.png</file>
+        <file>source/images/redio/btnHeader_hover.png</file>
+        <file>source/images/redio/btnHeader_press.png</file>
+        <file>source/images/redio/btnSaveChannel_def.png</file>
+        <file>source/images/redio/btnSaveChannel_hover.png</file>
+        <file>source/images/redio/btnSaveChannel_press.png</file>
+        <file>source/images/redio/btnSearch_def.png</file>
+        <file>source/images/redio/btnSearch_hover.png</file>
+        <file>source/images/redio/btnSearch_press.png</file>
+        <file>source/images/redio/btnSilence_def.png</file>
+        <file>source/images/redio/btnSilence_hover.png</file>
+        <file>source/images/redio/btnSilence_press.png</file>
+        <file>source/images/redio/btnTailer_def.png</file>
+        <file>source/images/redio/btnTailer_hover.png</file>
+        <file>source/images/redio/btnTailer_press.png</file>
     </qresource>
 </RCC>

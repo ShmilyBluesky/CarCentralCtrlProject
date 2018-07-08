@@ -67,7 +67,7 @@ Item {
                 id: imgInputDialNumber
                 width: parent.width
                 height: (parent.height - 10) / 2
-                source: "source/images/Phone/imgInput.png"
+                source: "source/images/Phone/imgInput_def.png"
 
                 TextEdit {
                     id: inputText

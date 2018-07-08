@@ -7,7 +7,7 @@ Window {
     width: 875
     height: 492
     title: qsTr("CarCentralCtrlPlat")
-    flags: Qt.FramelessWindowHint
+//    flags: Qt.FramelessWindowHint
 
     // 界面索引
     property int index4MainCtrl: 0
