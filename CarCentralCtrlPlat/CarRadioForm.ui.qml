@@ -38,7 +38,7 @@ Item {
         id: grid
         y: 293
         height: parent.height / 5
-        spacing: 20
+        spacing: 10
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 10
         anchors.right: parent.right
@@ -47,7 +47,7 @@ Item {
         anchors.leftMargin: 20
         rows: 2
         columns: 6
-        property int btnSpacing: 20
+        property int btnSpacing: 10
         property int btnMargin: 20
 
         CustomButton {

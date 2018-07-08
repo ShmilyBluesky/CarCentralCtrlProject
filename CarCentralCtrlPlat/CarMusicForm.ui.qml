@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Item {
     id: item1
-    width: 400
+    width: 600
     height: 400
     property alias rectangle: rectangle
     property alias btnBack: btnBack
@@ -100,8 +100,8 @@ Item {
             id: btnMediaSource
             x: 25
             y: 50
-            width: 75
-            height: 20
+            width: 120
+            height: 35
             imgBtnDef: "source/images/music/mediaSrc_def.png"
             imgBtnHover: "source/images/music/mediaSrc_hover.png"
             imgBtnPress: "source/images/music/mediaSrc_press.png"
