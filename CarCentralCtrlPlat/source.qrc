@@ -152,5 +152,40 @@
         <file>source/images/redio/btnTailer_def.png</file>
         <file>source/images/redio/btnTailer_hover.png</file>
         <file>source/images/redio/btnTailer_press.png</file>
+        <file>source/images/music/mediaSrc_def.png</file>
+        <file>source/images/music/mediaSrc_hover.png</file>
+        <file>source/images/music/mediaSrc_press.png</file>
+        <file>source/images/music/playLast_def.png</file>
+        <file>source/images/music/playLast_hover.png</file>
+        <file>source/images/music/playLast_press.png</file>
+        <file>source/images/music/playNext_def.png</file>
+        <file>source/images/music/playNext_hover.png</file>
+        <file>source/images/music/playNext_press.png</file>
+        <file>source/images/music/playOff_def.png</file>
+        <file>source/images/music/playOff_hover.png</file>
+        <file>source/images/music/playOff_press.png</file>
+        <file>source/images/music/playOn_def.png</file>
+        <file>source/images/music/playOn_hover.png</file>
+        <file>source/images/music/playOn_press.png</file>
+        <file>source/images/airCtrl/airAdd_def.png</file>
+        <file>source/images/airCtrl/airAdd_hover.png</file>
+        <file>source/images/airCtrl/airAdd_press.png</file>
+        <file>source/images/airCtrl/airDec_def.png</file>
+        <file>source/images/airCtrl/airDec_hover.png</file>
+        <file>source/images/airCtrl/airDec_press.png</file>
+        <file>source/images/airCtrl/airSpeed.png</file>
+        <file>source/images/airCtrl/airTemp.png</file>
+        <file>source/images/airCtrl/auto_def.png</file>
+        <file>source/images/airCtrl/auto_hover.png</file>
+        <file>source/images/airCtrl/auto_press.png</file>
+        <file>source/images/airCtrl/blowBody_def.png</file>
+        <file>source/images/airCtrl/blowBody_hover.png</file>
+        <file>source/images/airCtrl/blowBody_press.png</file>
+        <file>source/images/airCtrl/blowFoot_def.png</file>
+        <file>source/images/airCtrl/blowFoot_hover.png</file>
+        <file>source/images/airCtrl/blowFoot_press.png</file>
+        <file>source/images/airCtrl/dimist_def.png</file>
+        <file>source/images/airCtrl/dimist_hover.png</file>
+        <file>source/images/airCtrl/dimist_press.png</file>
     </qresource>
 </RCC>
