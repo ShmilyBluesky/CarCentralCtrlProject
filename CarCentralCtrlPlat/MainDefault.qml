@@ -12,12 +12,12 @@ MainDefaultForm {
 
         Timer {
             interval: 500; running: true; repeat: true
-            onTriggered: time.text = Qt.formatDateTime(new Date(), "dddd\nyyyy-MM-dd\nhh-mm-ss")
+            onTriggered: time.text = Qt.formatDateTime(new Date(), "dddd yyyy-MM-dd\nhh-mm-ss")
         }
         Text {
             id: time
+            z:2
             anchors.fill: parent
-//            text: qsTr("ADBASn你好")
             font.bold: true
             font.pixelSize: 50
             color:"white"
@@ -25,11 +25,11 @@ MainDefaultForm {
             verticalAlignment: Text.AlignVCenter
         }
         Glow {
-            anchors.fill: text
+            anchors.fill: time
             radius:9
             samples: 13
             color: "#ddd"
-            source: text
+            source: time
             spread: 0.5
             opacity: 0.8
             NumberAnimation on opacity {
@@ -52,4 +52,30 @@ MainDefaultForm {
         }
     }
 
+    SequentialAnimation{
+        running : true
+        ParallelAnimation {
+            //            PauseAnimation { duration: 100 }
+            NumberAnimation { target: mainDefaultWnd.image1; property: "opacity"; to: 0; duration: 3000 }
+            NumberAnimation { target: mainDefaultWnd.image2; property: "opacity"; to: 1; duration: 3000 }
+            NumberAnimation { target: mainDefaultWnd.image3; property: "opacity"; to: 0; duration: 3000 }
+        }
+
+
+        ParallelAnimation {
+            running : true
+            //            PauseAnimation { duration: 100 }
+            NumberAnimation { target: mainDefaultWnd.image1; property: "opacity"; to: 0; duration: 3000 }
+            NumberAnimation { target: mainDefaultWnd.image2; property: "opacity"; to: 0; duration: 3000 }
+            NumberAnimation { target: mainDefaultWnd.image3; property: "opacity"; to: 1; duration: 3000 }
+        }
+
+        ParallelAnimation {
+            running : true
+            //            PauseAnimation { duration: 100 }
+            NumberAnimation { target: mainDefaultWnd.image1; property: "opacity"; to: 1; duration: 3000 }
+            NumberAnimation { target: mainDefaultWnd.image2; property: "opacity"; to: 0; duration: 3000 }
+            NumberAnimation { target: mainDefaultWnd.image3; property: "opacity"; to: 0; duration: 3000 }
+        }
+    }
 }
