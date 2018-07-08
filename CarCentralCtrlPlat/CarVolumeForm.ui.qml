@@ -13,13 +13,13 @@ Item {
 
     Image {
         id: imgBackVolume
-        height: parent.height * 4 / 5
+        height: parent.height * 4 / 5 - 100
         anchors.top: parent.top
-        anchors.topMargin: 0
+        anchors.topMargin: 50
         anchors.right: parent.right
-        anchors.rightMargin: 0
+        anchors.rightMargin: 50
         anchors.left: parent.left
-        anchors.leftMargin: 0
+        anchors.leftMargin: 50
         source: "source/images/volume/back4volume.png"
     }
 

@@ -61,9 +61,9 @@ Item {
                 anchors.bottomMargin: 5
                 anchors.top: parent.top
                 anchors.topMargin: 5
-                imgBtnPress: "source/images/navigate/btnAdd_def.png"
+                imgBtnDef: "source/images/navigate/btnAdd_def.png"
                 imgBtnHover: "source/images/navigate/btnAdd_hover.png"
-                imgBtnDef: "source/images/navigate/btnAdd_press.png"
+                imgBtnPress: "source/images/navigate/btnAdd_press.png"
             }
         }
 
@@ -102,13 +102,13 @@ Item {
             CustomButton {
                 id: btn4Add1
                 anchors.top: parent.top
-                imgBtnPress: "source/images/navigate/btnDec_def.png"
+                imgBtnPress: "source/images/navigate/btnDec_press.png"
                 anchors.topMargin: 5
                 anchors.bottomMargin: 5
                 anchors.rightMargin: 10
                 anchors.right: parent.right
                 imgBtnHover: "source/images/navigate/btnDec_hover.png"
-                imgBtnDef: "source/images/navigate/btnDec_press.png"
+                imgBtnDef: "source/images/navigate/btnDec_def.png"
                 anchors.leftMargin: -40
                 anchors.bottom: parent.bottom
                 anchors.left: parent.right
