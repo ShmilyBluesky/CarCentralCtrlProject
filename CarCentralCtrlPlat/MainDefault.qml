@@ -88,17 +88,17 @@ MainDefaultForm {
     }
     Image {
         id: img1
-        source: "LoginBack_1.png"
+        source: "source/images/LoginBack_1.png"
         visible: false
     }
     Image {
         id: img2
-        source: "LoginBack_2.png"
+        source: "source/images/LoginBack_2.png"
         visible: false
     }
     Image {
         id: img3
-        source: "LoginBack_3.png"
+        source: "source/images/LoginBack_3.png"
         visible: false
     }
 

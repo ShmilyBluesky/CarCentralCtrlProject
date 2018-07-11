@@ -190,8 +190,5 @@
         <file>source/images/LoginBack_1.png</file>
         <file>source/images/LoginBack_2.png</file>
         <file>source/images/LoginBack_3.png</file>
-        <file>LoginBack_1.png</file>
-        <file>LoginBack_2.png</file>
-        <file>LoginBack_3.png</file>
     </qresource>
 </RCC>
