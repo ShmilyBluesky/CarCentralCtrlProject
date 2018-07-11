@@ -1,11 +1,16 @@
 import QtQuick 2.4
 import QtGraphicalEffects 1.0
+
+import QtQuick 2.8
+import QtQuick.Window 2.2
+import QtQuick.Controls 1.4
 MainDefaultForm {
     id: mainDefaultWnd
-
+    visible: true
     gotoMainCtrl.onBtnClicked: {
         mainWindow.pageIndex = mainWindow.index4MainCtrl
     }
+
 
     Item {
         anchors.fill:parent
@@ -52,30 +57,86 @@ MainDefaultForm {
         }
     }
 
-    SequentialAnimation{
-        running : true
-        ParallelAnimation {
-            //            PauseAnimation { duration: 100 }
-            NumberAnimation { target: mainDefaultWnd.image1; property: "opacity"; to: 0; duration: 3000 }
-            NumberAnimation { target: mainDefaultWnd.image2; property: "opacity"; to: 1; duration: 3000 }
-            NumberAnimation { target: mainDefaultWnd.image3; property: "opacity"; to: 0; duration: 3000 }
-        }
-
-
-        ParallelAnimation {
-            running : true
-            //            PauseAnimation { duration: 100 }
-            NumberAnimation { target: mainDefaultWnd.image1; property: "opacity"; to: 0; duration: 3000 }
-            NumberAnimation { target: mainDefaultWnd.image2; property: "opacity"; to: 0; duration: 3000 }
-            NumberAnimation { target: mainDefaultWnd.image3; property: "opacity"; to: 1; duration: 3000 }
-        }
-
-        ParallelAnimation {
-            running : true
-            //            PauseAnimation { duration: 100 }
-            NumberAnimation { target: mainDefaultWnd.image1; property: "opacity"; to: 1; duration: 3000 }
-            NumberAnimation { target: mainDefaultWnd.image2; property: "opacity"; to: 0; duration: 3000 }
-            NumberAnimation { target: mainDefaultWnd.image3; property: "opacity"; to: 0; duration: 3000 }
+    property int flag: 1
+    property var imgList: [img1,img2,img3]
+    StackView{
+        id:stack
+        anchors.fill: parent
+        initialItem: img1
+        delegate: StackViewDelegate{
+            function transitionFinished(properties)
+            {
+                properties.exitItem.opacity = 1
+            }
+            pushTransition: StackViewTransition {
+                PropertyAnimation {
+                    target: enterItem
+                    property: "opacity"
+                    from: 0
+                    to: 1
+                    duration: 1500
+                }
+                PropertyAnimation {
+                    target: exitItem
+                    property: "opacity"
+                    from: 1
+                    to: 0
+                    duration: 500
+                }
+            }
         }
     }
+    Image {
+        id: img1
+        source: "LoginBack_1.png"
+        visible: false
+    }
+    Image {
+        id: img2
+        source: "LoginBack_2.png"
+        visible: false
+    }
+    Image {
+        id: img3
+        source: "LoginBack_3.png"
+        visible: false
+    }
+
+    Timer{
+        interval: 2000
+        repeat: true
+        running: true
+        onTriggered: {
+            stack.push({item:imgList[flag%3],immediate:false,replace:true})
+            flag++
+        }
+    }
+
+
+    SequentialAnimation {
+        SequentialAnimation {
+            ParallelAnimation {
+                YAnimator {
+                    target: gotoMainCtrl;
+                    from: gotoMainCtrl.minHeight;
+                    to: gotoMainCtrl.maxHeight
+                    easing.type: Easing.OutExpo;
+                    duration: 300
+                }
+            }
+            ParallelAnimation {
+                YAnimator {
+                    target: gotoMainCtrl;
+                    from: gotoMainCtrl.maxHeight;
+                    to: gotoMainCtrl.minHeight
+                    easing.type: Easing.OutBounce;
+                    duration: 1000
+                }
+            }
+        }
+        PauseAnimation { duration: 500 }
+        running: true
+        loops: Animation.Infinite
+    }
+
 }
